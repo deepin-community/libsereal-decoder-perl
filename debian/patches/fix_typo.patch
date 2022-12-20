@@ -1,0 +1,30 @@
+Subject: Fix spelling
+Origin: vendor
+Bug: https://github.com/Sereal/Sereal/issues/200
+Forwarded: https://github.com/Sereal/Sereal/issues/200
+From: Alex Mestiashvili <mestia@debian.org>
+Reviewed-by: gregor herrmann <gregoa@debian.org>
+Last-Update: 2020-07-10
+
+--- a/lib/Sereal/Decoder.pm
++++ b/lib/Sereal/Decoder.pm
+@@ -481,7 +481,7 @@
+ Read and decode the file specified. If called in list context
+ and incremental mode is enabled then decodes all packets
+ contained in the file and returns a list, otherwise decodes
+-the first (or only) packet in the file. Accepts an optinal
++the first (or only) packet in the file. Accepts an optional
+ "target" variable as a second argument.
+ 
+ =head2 looks_like_sereal
+--- a/srl_decoder.c
++++ b/srl_decoder.c
+@@ -1608,7 +1608,7 @@
+ {
+     SV *sv_pat= sv_2mortal(FRESH_SV());
+     srl_read_single_value(aTHX_ dec, sv_pat, NULL);
+-    SRL_RDR_ASSERT_SPACE(dec->pbuf, 1, " while reading regexp modifer tag");
++    SRL_RDR_ASSERT_SPACE(dec->pbuf, 1, " while reading regexp modifier tag");
+     /* For now we will serialize the flags as ascii strings. Maybe we should use
+      * something else but this is easy to debug and understand - since the modifiers
+      * are tagged it doesn't matter much, we can add other tags later */

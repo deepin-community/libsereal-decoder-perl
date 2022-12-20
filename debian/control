@@ -1,0 +1,33 @@
+Source: libsereal-decoder-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Alexandre Mestiashvili <mestia@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libdevel-checklib-perl,
+               libtest-deep-perl <!nocheck>,
+               libtest-differences-perl <!nocheck>,
+               libtest-longstring-perl <!nocheck>,
+               libtest-memorygrowth-perl <!nocheck>,
+               libtest-warn-perl <!nocheck>,
+               libzstd-dev,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libsereal-decoder-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libsereal-decoder-perl.git
+Homepage: https://metacpan.org/release/Sereal-Decoder
+Rules-Requires-Root: no
+
+Package: libsereal-decoder-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Breaks: libsereal-encoder-perl (<< ${source:Upstream-Version}~)
+Description: fast, compact, powerful binary deserialization module
+ Sereal::Decoder implements a deserializer for an efficient, compact-output,
+ and feature-rich binary protocol called Sereal.
+ .
+ Its sister module Sereal::Encoder implements an encoder for this format.
