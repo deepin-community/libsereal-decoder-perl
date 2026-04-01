@@ -1,8 +1,92 @@
-libsereal-decoder-perl (4.018+ds-deepin1) unstable; urgency=medium
+libsereal-decoder-perl (5.004+ds-1) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload.
+  * Import upstream version 5.004+ds.
+  * Refresh fix_typo.patch (offset).
 
- -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:59:54 +0800
+ -- gregor herrmann <gregoa@debian.org>  Sat, 24 Jun 2023 02:06:50 +0200
+
+libsereal-decoder-perl (5.003+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 5.003+ds.
+  * Make build dependency on libdevel-checklib-perl versioned.
+  * Make build dependency on libzstd-dev versioned.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Feb 2023 02:30:00 +0100
+
+libsereal-decoder-perl (5.002+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 5.002+ds.
+  * Refresh fix_typo.patch (offset).
+  * Declare compliance with Debian Policy 4.6.2.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 04 Feb 2023 18:33:31 +0100
+
+libsereal-decoder-perl (5.001+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 5.001+ds.
+  * Drop test dependency on libtest-memorygrowth-perl.
+    These tests cause more grief than gain.
+  * Refresh fix_typo.patch (offset).
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 10 Sep 2022 22:59:52 +0200
+
+libsereal-decoder-perl (4.025+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Add lintian override for upstream-metadata-missing-repository.
+    The upstream repo contains more stuff and is not helpful.
+  * Import upstream version 4.025+ds.
+  * Update debian/upstream/metadata.
+  * Refresh fix_typo.patch (offset).
+  * Declare compliance with Debian Policy 4.6.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 Jul 2022 00:45:28 +0200
+
+libsereal-decoder-perl (4.023+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.023+ds.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 20 Feb 2022 17:14:46 +0100
+
+libsereal-decoder-perl (4.022+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.022+ds.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 19 Feb 2022 19:52:49 +0100
+
+libsereal-decoder-perl (4.021+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.021+ds.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Feb 2022 16:55:09 +0100
+
+libsereal-decoder-perl (4.020+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.020+ds.
+  * Update build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Feb 2022 02:20:44 +0100
+
+libsereal-decoder-perl (4.019+ds-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ gregor herrmann ]
+  * Import upstream version 4.019+ds.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 12 Feb 2022 23:36:35 +0100
 
 libsereal-decoder-perl (4.018+ds-1) unstable; urgency=medium
 

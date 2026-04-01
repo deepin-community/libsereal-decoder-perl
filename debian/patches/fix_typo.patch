@@ -4,11 +4,11 @@ Bug: https://github.com/Sereal/Sereal/issues/200
 Forwarded: https://github.com/Sereal/Sereal/issues/200
 From: Alex Mestiashvili <mestia@debian.org>
 Reviewed-by: gregor herrmann <gregoa@debian.org>
-Last-Update: 2020-07-10
+Last-Update: 2023-06-24
 
 --- a/lib/Sereal/Decoder.pm
 +++ b/lib/Sereal/Decoder.pm
-@@ -481,7 +481,7 @@
+@@ -482,7 +482,7 @@
  Read and decode the file specified. If called in list context
  and incremental mode is enabled then decodes all packets
  contained in the file and returns a list, otherwise decodes
@@ -19,7 +19,7 @@ Last-Update: 2020-07-10
  =head2 looks_like_sereal
 --- a/srl_decoder.c
 +++ b/srl_decoder.c
-@@ -1608,7 +1608,7 @@
+@@ -1766,7 +1766,7 @@
  {
      SV *sv_pat= sv_2mortal(FRESH_SV());
      srl_read_single_value(aTHX_ dec, sv_pat, NULL);
